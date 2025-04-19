@@ -1,0 +1,17 @@
+body {
+    background-image: repeating-linear-gradient(216deg, rgb(0,0,0) 0px, rgb(0,0,0) 19px,transparent 19px, transparent 22px),repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 19px,transparent 19px, transparent 22px),repeating-linear-gradient(338deg, rgb(0,0,0) 0px, rgb(0,0,0) 19px,transparent 19px, transparent 22px),linear-gradient(90deg, rgb(247, 125, 77),rgb(127, 74, 152));
+    color: black;
+}
+
+.main{
+    width: 50%;
+    margin: auto;
+    background-color: rgb(247, 125, 77);
+    padding:20px;
+    border: 10px solid DarkOrchid;
+}
+
+h1, h2, h3{
+    font-family: 'Pacifico', cursive;}
+    font-weight: 400;
+    font-style: normal;
