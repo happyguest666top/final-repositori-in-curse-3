@@ -1,0 +1,29 @@
+id,text,link,category
+0,Stas Konarev,,name
+1,AI Devoleper,,position
+2,staskonarr@gmail.com,,contacts
+3,3800500693381,,contacts
+4,"Poltava, Ukraine",,contacts
+5,Telegram,https://t.me/Happyguest666top,contacts
+6,GitHub,https://github.com/happyguest666top,contacts
+8,Discord,https://discordapp.com/users/happyguest666top,contacts
+9,"I am Konarev Stas, I am an AI developer. I am well versed in the topic of AI. I can create and program AI. I use programs such as PyCharm and Github. I am a Python Pro developer.",,summary
+10,Kivy,,skills
+11,Pandas,,skills
+12,Panda3D,,skills
+13,3-D modeling,,skills
+14,2-D design,,skills
+15,HTML,,skills
+16,CSS,,skills
+17,Flask,,skills
+18,Test Ruffier,https://github.com/OlhaTryhub/ruffier,projects
+19,Titanic predictions,https://github.com/olha-tryhub-teacher/python/blob/main/pythonPro1/module4/lesson4/lesson4.py,projects
+20,Maze,https://github.com/happyguest666top/final-project-part-4,projects
+21,Shooter,,projects
+22,StasCraft,https://github.com/happyguest666top/hero.py-part-4,projects
+23,"They often don’t start in AI: Many AI developers come from diverse backgrounds like mathematics, physics, linguistics, psychology, or even philosophy. AI is such an interdisciplinary field that developers often bring unique perspectives from other areas, which helps in designing smarter and more human-centric systems.",,facts
+24,"They spend more time on data than algorithms: A common misconception is that AI developers spend most of their time building complex models. In reality, a huge portion of their work goes into cleaning, organizing, and labeling data — the fuel that powers AI.",,facts
+25,"They rely heavily on open-source tools: Most AI developers use open-source libraries like TensorFlow, PyTorch, Hugging Face Transformers, and scikit-learn. The AI community thrives on collaboration and shared knowledge, which means breakthroughs often come from tweaking existing tools rather than reinventing the wheel.",,facts
+26,Completed 8 years of schooling at Poltava Secondary School No. 14,,education
+27,Python Start Course - Logika (2022 - 2024),,education
+28,Python Pro Course - Logika (2024 - 2025),,education

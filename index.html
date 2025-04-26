@@ -1,51 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel ='stylesheet' href="{{ url_for('static', filename='styles.css') }}">
+    <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
-    Bungee Spice: CSS class
+    <link rel ='stylesheet' href="{{ url_for('static', filename='styles.css') }}">
     <meta charset="UTF-8">
     <title>Конарев Станислав Резюме</title>
 </head>
 <body>
 <div class="main">
-<h1>{{name}}</h1>
-<h3>{{position}}</h3>
-<h2>Contacts</h2>
-<ul>
-    {% for contact, link in contacts %}
-        {% if link %}
-            <li><a href={{link}}>{{contact}}</a></li>
-        {% else %}
-            <li>{{contact}}</li>
-        {% endif %}
-    {% endfor %}
-</ul>
+    <div class="left">
+        <img class="photo" src="{{ url_for('static', filename='photo.jpg') }}">
+        <h1>{{name}}</h1>
+        <h3>{{position}}</h3>
 
-<h2>Summary</h2>
-<p>{{summary}}</p>
+        <h2>Summary</h2>
+        <p>{{summary}}</p>
 
-<h2>Skills</h2>
-<table border="1">
-    {% for i in range(0, skills|length, 4) %}
-        <tr>
-            {% for j in range(4) %}
-                {% if i + j < skills|length %}
-                    <td>{{ skills[i + j] }}</td>
+        <h2>Contacts</h2>
+        <ul>
+            {% for contact, link in contacts %}
+                {% if link %}
+                    <li><a href={{link}}>{{contact}}</a></li>
                 {% else %}
-                    <td></td>
+                    <li>{{contact}}</li>
                 {% endif %}
             {% endfor %}
-        </tr>
-    {% endfor %}
-</table>
+        </ul>
+    </div>
 
-<h2>Projects</h2>
-{% for project, link in projects %}
-    <a href={{link}}>{{projects}}</a>
-{% endfor %}
-</div>
+    <div class="right">
+        <h2>Skills</h2>
+        <table>
+            {% for i in range(0, skills|length, 4) %}
+                <tr>
+                    {% for j in range(4) %}
+                        {% if i + j < skills|length %}
+                            <td>{{ skills[i + j] }}</td>
+                        {% else %}
+                            <td></td>
+                        {% endif %}
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+
+        <h2>Projects</h2>
+        {% for project, link in projects %}
+            <a class="project" href={{link}}>{{project}}</a>
+        {%endfor%}
+
+        <h2>Education</h2>
+        <ul>
+            {% for e in education %}
+                <li>{{e}}</li>
+            {%endfor%}
+        </ul>
+
+
+        <h2>Facts about AI Developers</h2>
+            {% for fact in facts %}
+                <p>{{fact}}</p>
+            {%endfor%}
+        </div>
+    </div>
 </body>
 </html>

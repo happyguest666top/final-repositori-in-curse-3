@@ -5,17 +5,19 @@ import os
 
 
 def index():
-    data = pd.read_csv("Data.CSV.csv")
+    data = pd.read_csv("data.csv")
     # photo = "photo.jpg" #######
     name = data[data["category"] == "name"]["text"].values[0]
     position = data[data["category"] == "position"]["text"].values[0]
     contacts = data[data["category"] == "contacts"][["text", "link"]].replace({np.nan: None}).values
     summary = data[data["category"] == "summary"]["text"].values[0] # ⬅️⬅️⬅️⬅️⬅️
     skills = data[data["category"] == "skills"]["text"].values
-    projects = data[data["category"] == "project"][["text", "link"]].replace({np.nan: None}).values
+    projects = data[data["category"] == "projects"][["text", "link"]].replace({np.nan: None}).values
     education = data[data["category"] == "education"]["text"].values
     achievements = data[data["category"] == "achievements"]["text"].values
     facts = data[data["category"] == "facts"]["text"].values
+
+    print(projects)
 
     return render_template("index.html", name=name,
                            # photo=photo,#########
